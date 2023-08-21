@@ -8,7 +8,7 @@
       >
         <NuxtLink
           :to="{
-            name: 'singlecountry',
+            name: 'singlecountryImage-singlecountry',
             params: {
               singlecountry: country.name.common,
               singlecountryImage: country.flags.png,
@@ -19,6 +19,7 @@
             class="img-container"
             :src="country.flags.png"
             :alt="country.flags.alt"
+            :title="country.name.common"
           />
 
           <p class="country-name">{{ country.name.common }}</p>
@@ -27,6 +28,8 @@
     </ul>
   </div>
 </template>
+
+
 
 <script setup>
 import { ref } from "vue";
