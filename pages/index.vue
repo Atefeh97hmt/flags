@@ -8,10 +8,10 @@
       >
         <NuxtLink
           :to="{
-            name: 'singlecountryImage-singlecountry',
+            name: 'singlecountry',
             params: {
               singlecountry: country.name.common,
-              singlecountryImage: country.flags.png,
+            //   singlecountryImage: country.flags.png,
             },
           }"
         >
@@ -63,7 +63,7 @@ getCountries();
   border-radius: 10px;
   justify-content: center;
   width: 200px;
-  height: 120px;
+  height: 150px;
 }
 .counteries-item a {
   color: rgb(58, 58, 58);
@@ -74,8 +74,8 @@ getCountries();
   font-size: 14px;
 }
 .img-container {
-  width: 200px;
-  height: 70px;
+  width: 180px;
+  height: 85px;
   border-radius: 10px;
 }
 </style>
